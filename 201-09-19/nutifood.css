@@ -1,0 +1,73 @@
+.background{
+    height: 200px;
+    background-color:rgb(5, 147, 0);
+    display:flex;
+    justify-content: enter;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+    height: 100px;
+    background-color:red;
+    display:flex;
+    justify-content: enter;
+    align-items: center;
+}
+.menu{
+    width: 65%;
+    height: 150px;
+    background-color:rgb(5, 147, 0);
+    display:flex;
+    justify-content: enter;
+    align-items: center;
+    margin: 10px;
+}
+.header2{
+    height:150px;
+    background-color: aqua;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.blue{
+    width:30%;
+    height:150px;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px;
+}
+.yellow{
+    width: 50%;
+    height: 150px;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px;
+}
+.tim{
+    width: 50%;
+    height: 300px;
+    background-color:rgb(5, 147, 0);
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 150px;
+    margin-left: 15px;     
+}
+.background1{
+    height: 200px;
+    background-color:white;
+    display:flex;
+    justify-content: enter;
+    align-items: center;
+}
+.background2{
+    height: 500px;
+    background-color:white;
+    display:flex;
+    justify-content: enter;
+    align-items: center;
+}

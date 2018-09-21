@@ -1,0 +1,11 @@
+.Header{
+    height:100px;
+    background-color:red;
+}
+.ten{
+    color:blue;
+    text-align: center;
+}
+.content{
+    height: 1000px;
+}
