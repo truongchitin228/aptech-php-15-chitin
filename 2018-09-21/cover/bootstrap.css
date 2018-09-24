@@ -1,0 +1,23 @@
+.mau{
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+.mau1{
+    height: 200px;
+    display: flex;
+    justify-content: center; 
+}
+.mau2{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.mau3{
+    height: 400px;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+
+}
