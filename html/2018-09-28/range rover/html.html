@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foem Tim Kiem</title>
+</head>
+<body>
+    <form name="fsearch" method="get">
+        <input type="text" name="txtsearch" placeholder="TÌM KIẾM..."/>
+        <input type="submit" value="GỬI" >
+    </form>
+    <form name="flogin" method="POST">
+        <label>tên đăng nhập</label>
+        <input type="text" name="txtName" placeholder="Nhập Tên"/><br>  
+        <label>Nhập mật khẩu</label>
+        <input type="password" name="txtPass" placeholder="Mật khẩu"/><br>
+        <input type="submit" value="Đăng nhập" >
+    </form>
+    <form name="fcustomer" method="get">
+           <fieldset>
+               <legend>customer info</legend>
+               <label>name</label>
+               <input type="text" name="txtName" placeholder="Enter your name" required><br>
+               <label>Telephone</label>
+               <input type="text" name="txtTel" placeholder="xxxx-xxxx-xxxx" required><br>  
+               <label>Email address</label>
+               <input type="email" name="email" placeholder="Enter your email address" required size="50"><br>  
+                <label>date</label>
+                <input type="date" name="date" placeholder="dd/mm/yyyy">
+           </fieldset>
+        </form>
+        <fieldset>
+            <legend>Favorite composer</legend>
+            <table>
+            <input type="text" name="fovorite" list="composers">
+                <datalist id="composers">
+                    <option value="Beethoven"></option>
+                    <option value="Brahms"></option>
+                    <option value="chopin"></option>
+                    <option value="Mendelssohn"></option>                   </datalist>   
+            </label>
+        </fieldset>
+        <fieldset>
+        <legend>composers</legend>
+        <table>Bach
+        <input type="number" name="form_number" id="form-number" min="1" max="5" ></table>
+        <table>Beethoven:
+        <input type="number" name="form_number" id="form-number" min="1" max="5" ></table>
+        <input type="file" multiple="multiple">
+    </fieldset>
+    <textarea cols="30" rows="20"></textarea>
+    <input type=" radio" name="txtcolor"> red
+    <input type=" radio" name="txtcolor"> blue
+    <h2>Low and Slow</h2>
+
+</body>
+</html>

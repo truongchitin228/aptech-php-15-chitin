@@ -5,5 +5,15 @@
     width: 300pxs   ;
 }
 .t{
-    background:url("https://znews-photo-td.zadn.vn/w1024/Uploaded/rik_rdcvcvwt_wc/2018_04_26/1.jpg");
+    background:url("http://landrover-jaguar.vn/uploads/news/20160126100134.JPG");
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 10% 70%;
+}
+.anhnen{
+    background:url(https://image.tienphong.vn/w800/Uploaded/2018/pcgycivo/2014_04_14/094118-1.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: 100% 100%  
 }
