@@ -5,7 +5,7 @@
     align-items: center;    
 }
 .mau1{
-    height: 200px;
+    height: 600px;
     display: flex;
     justify-content: center; 
 }
@@ -15,7 +15,7 @@
     align-items: center; 
 }
 .mau3{
-    height: 400px;
+    height: 200px;
     display:flex;
     justify-content: center;
     align-items: center; 

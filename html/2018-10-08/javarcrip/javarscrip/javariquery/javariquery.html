@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script></head>
+    <!-- <body>
+            <h1>HỌ VÀ TÊN</h1>
+            <p>LỚP</p>
+            <button id="btn1"> Trương chí tín </button>
+            <button id="btn2"> 17t3 </button>
+
+    <script>
+        $(document).ready(function () {
+            $('#btn1').click(function () {
+                $('h1').prepend('<b>trương chí tín </b>');
+            });
+            $('#btn2').click(function () {
+                $('p').prepend('<b>17T3</b>')
+            });
+        });
+    </script> --> 
+    <div id="js-div-table"> </div>
+    <script>
+
+        var table = '<table id ="js-table"></table>';
+        $("#js-div-table").append(table);   
+        var thead = '<thead id ="js-thead"></thead>';
+        $(thead).appendTo("#js-table");   
+        var tr = '<tr id ="js-tr-head"></tr>';
+        $(tr).appendTo("#js-thead");    
+        var th = '<th>#</th><th>Name</th><th>Lớp</th><th>Email</th>';
+        $(th).appendTo("#js-tr-head"); 
+
+        var tbody ='<tbody id="tbody"></tbody>';
+        $("#js-thead").after(tbody);
+        var trbody = '<tr id ="js-trbody"></tr>';
+        $(trbody).appendTo("tbody");
+        var thBody = '<th> 1 </th>';
+        $(thBody).appendTo("tbody");
+        var tdBody = '<td>trương chí tín</td><th>17T3</th><td>truongchitin228@gmail.com</td>';
+        $(tdBody).appendTo("tbody");
+
+        var trbody = '<tr id ="js-trbody"></tr>';
+        $(trbody).appendTo("tbody");
+        var thBody = '<th> 2 </th>';
+        $(thBody).appendTo("tbody");
+        var tdBody = '<td>trần nhật tuấn</td><th>17T3</th><td>nhatuan@gmail.com</td>';
+        $(tdBody).appendTo("tbody");
+
+        var trbody = '<tr id ="js-trbody"></tr>';
+        $(trbody).appendTo("tbody");
+        var thBody = '<th> 3 </th>';
+        $(thBody).appendTo("tbody");
+        var tdBody = '<td>trần nhật tiến</td><th>17T3</th><td>nhattien@gmail.com</td>';
+        $(tdBody).appendTo("tbody");
+
+        var trbody = '<tr id ="js-trbody"></tr>';
+        $(trbody).appendTo("tbody");
+        var thBody = '<th> 4 </th>';
+        $(thBody).appendTo("tbody");
+        var tdBody = '<td>đình tuyên</td><th>17T3</th><td>dinhtuyen1999@gmail.com</td>';
+        $(tdBody).appendTo("tbody");
+
+        var trbody = '<tr id ="js-trbody"></tr>';
+        $(trbody).appendTo("tbody");
+        var thBody = '<th> 5 </th>';
+        $(thBody).appendTo("tbody");
+        var tdBody = '<td>Hồng Phong</td><th>17T3</th><td>hongphong1999@gmail.com</td>';
+        $(tdBody).appendTo("tbody");
+    </script>
+</body>
+</html>
