@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <body>
-
   <script>
     var b = {
       "message": "welcome to aptech php course",
@@ -1233,10 +1231,14 @@
         }
       ]
     };
-    var e = document.createElement('b.message.users');
-    var nameE = document.createTextNode(b.message[1,3].id);
-    e.appendChild(nameE);
-    document.body.appendChild(e);
+    var tbody = ' <tbody></tbody>';
+    $('#js-thead').after(tbody);
+    for (i = 0; i < b.users.length; i++) {
+      var trBody = '<tr id="trBody-' + b.users[i].id + '"></tr>';
+      $(trBody).appendTo('tbody');
+      var thBody = ' <th>' + (i + 1) + '</th>';
+      var tdBody = '<td>' + b.users[i].name + '</td><td>' + b.users[i].email + '</td> ';
+      $('#trBody-' + b.users[i].id).append(thBody, tdBody);
   </script>
 </body>
 </html>

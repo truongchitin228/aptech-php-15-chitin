@@ -1,25 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   
-</head>
-<body>
-     <div class="container">
-        <div class="row">
-            <div id="js-div-table" class="col-12">
+$(document).ready(function() {
+  $("#js-div-table").before(
+    '<h1 class="d-flex justify-content-center text-info">' + b.message + "</h1>"
+  );
+});
 
-            </div>
-        </div>
-    </div>
-   
+var table = '<table id="js-table" class="table table-bordered"></table>';
+$("#js-div-table").append(table);
+var thead = '<thead id="js-thead"></thead>';
+$(thead).appendTo("#js-table");
+var tr = '<tr id="js-tr-head"></tr>';
+$(tr).appendTo("#js-thead");
+var th =
+  "<th> id </th> <th> name </th> <th> email </th> ";
+$(th).appendTo("#js-tr-head");
+var tbody = '<tbody id="#js-tbody"></tbody>';
+$("#js-thead").after(tbody);
 
+var u = b.users;
+u.forEach(function(user, i) {
+  var trBody = '<tr id="js-tr-body-' + i + '"></tr>';
+  $(trBody).appendTo("tbody");
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
-      crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
-      crossorigin="anonymous "></script>
-       <script src="tablejson.js"></script> 
-
-</body>
-</html>
+  var tdBody =
+    " <td>" +
+    user.name +
+    "</td>" +
+    "<td>" +
+    user.email +
+    "</td>" +
+    "<td>" +
+  $("#js-tr-body-" + i).append(tdBody);
+});
