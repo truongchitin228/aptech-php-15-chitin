@@ -1,19 +1,25 @@
 /* border-bottom */
-/* Carousel */
-.h{
-    height: 300px;
-    width: 300pxs   ;
-}
-.t{
-    background:url("http://landrover-jaguar.vn/uploads/news/20160126100134.JPG");
 
+
+/* Carousel */
+
+.h {
+    height: 300px;
+    width: 300pxs;
+}
+
+.t {
+    background: url("http://landrover-jaguar.vn/uploads/news/20160126100134.JPG");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: 10% 70%;
 }
-.anhnen{
-    background:url(https://image.tienphong.vn/w800/Uploaded/2018/pcgycivo/2014_04_14/094118-1.jpg);
+
+.anhnen {
+    background: url(https://image.tienphong.vn/w800/Uploaded/2018/pcgycivo/2014_04_14/094118-1.jpg);
     background-repeat: no-repeat;
-    background-size:  cover;
-    background-position: 100% 100%  
+    background-size: cover;
+    background-position: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
