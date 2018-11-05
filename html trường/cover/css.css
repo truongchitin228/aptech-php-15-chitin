@@ -1,0 +1,15 @@
+.header-logoh1 {
+    font: italic bold 2.5rem BallparkWeiner, serif;
+    text-shadow: 5px 5px 10px grey
+}
+
+.header-logoh2 {
+    font: 1.1em Dayrom, serif;
+}
+
+.header-logoh3 {
+    color: black;
+    height: 20px;
+}
+
+.header-logo4 {}
