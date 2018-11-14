@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\User;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+
 
 class UserController extends Controller
 {
@@ -13,7 +15,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::all();
+        return view('mvc', ['users' => $users]);
     }
 
     /**
@@ -23,7 +26,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('/');
     }
 
     /**
@@ -34,7 +37,12 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $users = new User;
+        $users->id = $request->id;
+        $users->name = $request->name;
+        $users->email = $request->email;
+        $users->password = $request->password;
+        $users->save();
     }
 
     /**
@@ -45,7 +53,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        return User::find($id);
     }
 
     /**
@@ -68,7 +76,12 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $User = User::find($id);
+        $User->name = $request->name;
+        $User->email = $request->email;
+        $users->password = $request->password;
+        $User->save();
+        return redirect('index');
     }
 
     /**
@@ -79,6 +92,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $users = User::destroy($id);
+        return redirect('/');
+
     }
 }
