@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/manytomany','PostController@index')->name('user.index');
 // thêm 1 người dùng trong bảng
 Route::get('/manytomany/create', 'PostController@create')->name('user.create');
@@ -25,3 +26,4 @@ Route::delete('/manytomany/{id}', 'PostController@destroy')->name('user.destroy'
 Route::get('/manytomany/{id}/edit', 'PostController@edit')->name('user.edit');
 // cập nhật thông tin trong bảng
 Route::put('/manytomany/{id}/edit', 'PostController@update')->name('user.update');
+
